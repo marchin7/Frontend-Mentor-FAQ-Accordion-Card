@@ -1,14 +1,10 @@
 
 :root {
-    /*text*/
     --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
     --Soft-red: hsl(14, 88%, 65%);
-    /*background gradient*/
     --background-gradient: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
-    /*text*/
     --Very-dark-grayish-blue: hsl(237, 12%, 33%);
     --Dark-grayish-blue: hsl(240, 6%, 50%);
-    /*dividers*/
     --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 
@@ -83,8 +79,9 @@ h1 {
     color: var(--Very-dark-desaturated-blue);
     cursor: pointer;
     margin: 15px 0px 15px 0px;
-    transition: all 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
+
 .faq-question.active {
    font-weight: 700;
 }
@@ -95,21 +92,23 @@ h1 {
 
 .faq-answer {
     width: 352px;
-    height: auto;
     height: 0px;
     color: var(--Dark-grayish-blue);
     border-bottom: 1px solid hsl(240, 5%, 91%);
-    padding-right: 45px;
+    padding-right: 35px;
     overflow: hidden;
-    transition: all 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .faq-answer.active {
-    height: 55px;
+    height: 50px;
 }
+
+.a2 {height: 50px;}
+.q2 {margin-bottom: 10px;}
 
 .arrow {
     float: right;
-    transition: all 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
     margin-top: 5px;
     margin-right: 15px;
 }
@@ -119,6 +118,11 @@ h1 {
 
 
 @media only screen and (max-width: 920px){
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
     .main-content-image {
         display: none;
     }
@@ -139,6 +143,7 @@ h1 {
     }
 
     .faq-question {
+        font-size: 13px;
         width: 100%;
         min-width: 285px;
     }
