@@ -117,7 +117,7 @@ h1 {
 @media only screen and (max-width: 920px){
 
     body {
-        height: 100%;
+        height: 100vh;
         width: 100%;
     }
     .main-content-image {
