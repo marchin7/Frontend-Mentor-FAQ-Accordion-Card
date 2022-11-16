@@ -100,11 +100,8 @@ h1 {
     transition: 0.2s ease-in-out;
 }
 .faq-answer.active {
-    height: 50px;
+    height: 55px;
 }
-
-.a2 {height: 50px;}
-.q2 {margin-bottom: 10px; font-weight: 700;}
 
 .arrow {
     float: right;
