@@ -17,11 +17,13 @@
 body {
     width: 100%;
     height: 100vh;
+    min-height: 800px;
     font-family: kumbh sans, sans-serif;
     font-size: 12px;
     color: var(--Dark-grayish-blue);
     background: var(--background-gradient);
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +81,7 @@ h1 {
     font-weight: 400;
     color: var(--Very-dark-desaturated-blue);
     cursor: pointer;
-    margin: 15px 0px 15px 0px;
+    margin: 16px 0px 16px 0px;
     transition: font-weight 0.35s ease-in-out, color 0.15s ease-in-out;
 }
 
@@ -122,17 +124,16 @@ h1 {
 
 @media only screen and (max-width: 920px){
 
+
     body {
-        height: 100%;
-        width: 100%;
-        min-width: 300px;
+        height: 100vh;
     }
 
     .main {
         background-image: none;
         min-width: 300px;
-        min-height: 530px;
-        margin: 130px 25px;
+        min-height: 540px;
+        margin: 135px 25px 80px 25px;
         padding: 0px 25px 0px 25px;
     }
     .main-image {
