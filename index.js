@@ -14,8 +14,9 @@ faqQuestions.forEach(item=> {item.addEventListener('click', ()=> {
                 question.nextElementSibling.style.maxHeight = '0px'
             }
             else{question.nextElementSibling.style.maxHeight = question.nextElementSibling.scrollHeight + 'px'}
-        question.firstElementChild.classList.toggle('rotate')
-        question.classList.toggle('active')
+            
+            question.firstElementChild.classList.toggle('rotate')
+            question.classList.toggle('active')
         }
     })
 })});
