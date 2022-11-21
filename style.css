@@ -22,38 +22,38 @@ body {
     color: var(--Dark-grayish-blue);
     background: var(--background-gradient);
     background-repeat: no-repeat;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-
-.main {
+.main-content {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
     background-color: white;
     width: 920px;
-    min-width: 800px;
     height: 510px;
     border-radius: 25px;
     background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-position-x: -580px;
+    background-position-x: -575px;
     background-position-y: -295px;
     box-shadow: 0 30px 35px 5px rgb(0, 0, 0, 0.25);
     margin-left: 43px;
 }
-.main-image {
+.main-content-image {
     position: relative;
     width: 460px;
-    height: 100%;
     background-image: url(images/illustration-woman-online-desktop.svg);
     background-repeat: no-repeat;
-    background-position-x: -85px;
+    background-position-x: -80px;
     background-position-y: 70px;
 }
-.main-faq {
+.main-content-faq {
     flex: 1;
     padding-left: 15px;
 }
@@ -69,22 +69,21 @@ body {
 
 h1 {
     margin: 63px 0px 35px 0px;
-    font-size: 32px;
+    font-size: 34px;
     color: var(--Very-dark-desaturated-blue);
 }
 
 .faq-question {
-    width: 350px;
+    width: 352px;
     font-size: 14px;
-    font-weight: 400;
     color: var(--Very-dark-desaturated-blue);
     cursor: pointer;
     margin: 15px 0px 15px 0px;
-    transition: font-weight 0.4s ease-in-out, color 0.15s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .faq-question.active {
-   font-weight: 600;
+   font-weight: 700;
 }
 
 .faq-question:hover {
@@ -92,28 +91,23 @@ h1 {
 }
 
 .faq-answer {
-    width: 350px;
-    max-height: 0px;
-    border-bottom: 1px solid hsl(240, 5%, 91%);
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
- 
-}
-
-.faq-answer-inner {
+    width: 352px;
+    height: 0px;
     color: var(--Dark-grayish-blue);
-    line-height: 20px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-right: 35px;
     overflow: hidden;
-    padding: 0px 30px 15px 0px;
-    margin-top: -5px;
+    transition: 0.2s ease-in-out;
 }
-
+.faq-answer.active {
+    height: 55px;
+}
 
 .arrow {
     float: right;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
     margin-top: 5px;
-    margin-right: 18px;
+    margin-right: 15px;
 }
 .arrow.rotate {
     transform: rotate(-180deg);
@@ -123,29 +117,21 @@ h1 {
 @media only screen and (max-width: 920px){
 
     body {
-        height: 100%;
+        height: 100vh;
         width: 100%;
-        min-width: 300px;
+        min-width: 280px;
     }
-
-    .main {
-        background-image: none;
-        min-width: 300px;
-        min-height: 530px;
-        margin: 130px 25px;
-        padding: 0px 25px 0px 25px;
-    }
-    .main-image {
+    .main-content-image {
         display: none;
     }
 
-    .main-faq {
+    .main-content {
         background-image: url(images/bg-pattern-mobile.svg);
-        background-repeat: no-repeat;
         background-position: center;
         background-position-y: 0px ;
-        margin: 0;
-        padding: 0;
+        margin: 120px 40px 70px 40px;
+        padding: 0px 25px 10px 25px;
+        min-height: 535px;
     }
     
     h1 {
@@ -160,7 +146,7 @@ h1 {
         min-width: 285px;
     }
 
-    .main-faq {
+    .main-content-faq {
         position: relative;
         padding-left: 0px;
     }
