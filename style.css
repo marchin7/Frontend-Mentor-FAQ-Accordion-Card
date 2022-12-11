@@ -120,6 +120,8 @@ h1 {
 .arrow.rotate {
     transform: rotate(-180deg);
 }
+.q2 { font-weight: bold;}
+.a2 { max-height: fit-content;}
 
 
 @media only screen and (max-width: 920px){
