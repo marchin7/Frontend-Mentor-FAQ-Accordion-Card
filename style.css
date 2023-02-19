@@ -1,8 +1,10 @@
-
 :root {
     --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
     --Soft-red: hsl(14, 88%, 65%);
-    --background-gradient: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    --background-gradient: linear-gradient(
+        hsl(273, 75%, 66%),
+        hsl(240, 73%, 65%)
+    );
     --Very-dark-grayish-blue: hsl(237, 12%, 33%);
     --Dark-grayish-blue: hsl(240, 6%, 50%);
     --Light-grayish-blue: hsl(240, 5%, 91%);
@@ -11,6 +13,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,7 +30,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 
 .main {
     display: flex;
@@ -65,7 +67,7 @@ body {
 .box-image {
     position: absolute;
     top: 205px;
-    left: -93px;;
+    left: -93px;
 }
 
 h1 {
@@ -85,7 +87,7 @@ h1 {
 }
 
 .faq-question.active {
-   font-weight: 600;
+    font-weight: 600;
 }
 
 .faq-question:hover {
@@ -98,7 +100,6 @@ h1 {
     border-bottom: 1px solid hsl(240, 5%, 91%);
     overflow: hidden;
     transition: max-height 0.35s ease-in-out;
- 
 }
 
 .faq-answer-inner {
@@ -108,7 +109,6 @@ h1 {
     padding: 0px 30px 15px 0px;
     margin-top: -5px;
 }
-
 
 .arrow {
     float: right;
@@ -120,12 +120,7 @@ h1 {
     transform: rotate(-180deg);
 }
 
-@media only screen and (max-width: 920px){
-
-    * {
-        box-sizing: border-box;
-    }
-    
+@media only screen and (max-width: 920px) {
     body {
         height: 100vh;
     }
@@ -145,15 +140,14 @@ h1 {
         background-image: url(images/bg-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-position-y: 0px ;
+        background-position-y: 0px;
         margin: 0;
         padding: 0;
     }
-    
+
     h1 {
         text-align: center;
         margin-top: 130px;
-       
     }
 
     .faq-question {
@@ -191,5 +185,3 @@ h1 {
         transform: translate(-50%);
     }
 }
-    
-
